@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -22,5 +23,43 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Responsive tweaks for pixel-perfect layout */
+.hero-title {
+  font-size: 2.5rem;
+}
+@media (min-width: 640px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+.section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media (max-width: 640px) {
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.card-glow {
+  box-shadow: 0 0 32px 0 #a78bfa33, 0 2px 8px 0 #0002;
+}
+
+/* Utility for grid overlay in hero */
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
 }
