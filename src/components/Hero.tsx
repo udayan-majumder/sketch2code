@@ -45,7 +45,10 @@ export default function Hero() {
 
         {/* Buttons */}
         <div className="flex flex-row flex-wrap gap-3 justify-center mb-8">
-          <button className="flex items-center gap-2 px-5 py-2 rounded-lg bg-white text-black font-semibold shadow hover:bg-purple-100 transition text-base border border-neutral-200">
+          <a
+            className="flex items-center gap-2 px-5 py-2 rounded-lg bg-white text-black font-semibold shadow hover:bg-purple-100 transition text-base border border-neutral-200"
+            href="https://www.instagram.com/_sketch2code_/"
+          >
             <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
               <path
                 d="M7.75 2.75h8.5a5 5 0 0 1 5 5v8.5a5 5 0 0 1-5 5h-8.5a5 5 0 0 1-5-5v-8.5a5 5 0 0 1 5-5Z"
@@ -59,7 +62,7 @@ export default function Hero() {
               />
             </svg>
             Contact Us
-          </button>
+          </a>
           <button className="flex items-center gap-2 px-5 py-2 rounded-lg bg-white text-black font-semibold shadow hover:bg-purple-100 transition text-base border border-neutral-200">
             <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
               <path
@@ -123,9 +126,12 @@ export default function Hero() {
       </div>
 
       {/* Let's connect button */}
-      <button className="absolute left-4 bottom-4 sm:left-8 sm:bottom-8 px-5 py-2 rounded-lg bg-purple-400 text-white font-semibold shadow-lg text-sm sm:text-base z-30">
+      <a
+        className="absolute left-4 bottom-4 sm:left-8 sm:bottom-8 px-5 py-2 rounded-lg bg-purple-400 text-white font-semibold shadow-lg text-sm sm:text-base z-30"
+        href="https://www.instagram.com/_sketch2code_/"
+      >
         Let's connect
-      </button>
+      </a>
     </section>
   );
 }
