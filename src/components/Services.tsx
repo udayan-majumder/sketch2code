@@ -1,15 +1,37 @@
 "use client";
 import Image from "next/image";
 
-const features = [
-  { label: "20,000+ of PNG & SVG graphics", available: true },
-  { label: "Access to 100 million stock images", available: true },
-  { label: "Upload custom icons and fonts", available: false },
-  { label: "Unlimited Sharing", available: false },
-  { label: "Upload graphics & video in up to 4K", available: false },
-  { label: "Unlimited Projects", available: false },
-  { label: "Instant Access to our design system", available: false },
-  { label: "Create teams to collaborate on designs", available: false },
+const landingPageFeatures = [
+  { label: "Mobile-friendly and responsive design", available: true },
+  { label: "Deployed under ₹14,999", available: true },
+  { label: "Unlimited design mockups", available: true },
+  { label: "Free modification & revisions", available: true },
+  { label: "Basic contact form integration", available: true },
+  { label: "Free maintenance", available: true },
+  { label: "Single-page optimized for conversions", available: true },
+  { label: "Deployed to your custom domain", available: true },
+];
+
+const uiDesignFeatures = [
+  { label: "Wireframes to high-fidelity UI", available: true },
+  { label: "Unlimited mockups & free revisions", available: true },
+  { label: "Mobile-first, clean layouts", available: true },
+  { label: "Custom iconography & illustrations", available: true },
+  { label: "Design systems & reusable components", available: true },
+  { label: "Export-ready assets & guidelines", available: true },
+  { label: "Delivered in Figma or preferred tool", available: true },
+  { label: "Fast turnaround with feedback loops", available: true },
+];
+
+const businessWebsiteFeatures = [
+  { label: "Responsive multi-page websites", available: true },
+  { label: "Custom domain setup included", available: true },
+  { label: "Basic CMS integration (on request)", available: true },
+  { label: "Free ongoing maintenance", available: true },
+  { label: "Fast performance & SEO-friendly", available: true },
+  { label: "Under ₹14,999 for single landing page", available: true },
+  { label: "Client-ready handoff with documentation", available: true },
+  { label: "Unlimited design iterations", available: true },
 ];
 
 function FeatureList({
@@ -62,41 +84,42 @@ export default function Services() {
         <p className="text-lg text-purple-300 text-center mb-12">
           Choose what you need, we'll handle the rest.
         </p>
-        {/* Connector lines and glow */}
+
         <div className="relative flex flex-col md:flex-row gap-8 justify-center items-stretch">
-          <div className="absolute left-1/2 top-0 w-[80%] h-8 -translate-x-1/2 z-0 flex justify-between items-center pointer-events-none">
-            <div className="w-1/3 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent blur-md opacity-60" />
-            <div className="w-1/3 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent blur-md opacity-60" />
-          </div>
           {/* Box 1: Landing Pages */}
           <div className="flex-1 bg-white text-black rounded-2xl shadow-xl p-8 flex flex-col border-2 border-neutral-200 relative z-10">
             <h3 className="text-2xl font-bold mb-2">Landing Pages</h3>
             <p className="text-base mb-4">
-              We craft single-page experiences that drive clicks, leads, and
-              action — optimized for speed and conversions.
+              High-converting single-page sites under ₹14,999 — responsive,
+              optimized, and built to perform.
             </p>
-            <FeatureList color="text-purple-600" features={features} />
+            <FeatureList
+              color="text-purple-600"
+              features={landingPageFeatures}
+            />
           </div>
+
           {/* Box 2: UI Designs */}
           <div className="flex-1 bg-gradient-to-br from-purple-400 to-purple-600 text-white rounded-2xl shadow-2xl p-8 flex flex-col border-2 border-purple-400 relative z-20 scale-105">
             <h3 className="text-2xl font-bold mb-2">UI Designs</h3>
             <p className="text-base mb-4">
-              We deliver clean, user-centered interfaces crafted to perfection —
-              from wireframes to pixel-perfect designs.
+              Clean, modern user interfaces — unlimited iterations and mockups
+              until you’re satisfied.
             </p>
-            <FeatureList
-              color="text-white"
-              features={features.map((f) => ({ ...f, available: true }))}
-            />
+            <FeatureList color="text-white" features={uiDesignFeatures} />
           </div>
+
           {/* Box 3: Business Websites */}
           <div className="flex-1 bg-white text-black rounded-2xl shadow-xl p-8 flex flex-col border-2 border-neutral-200 relative z-10">
             <h3 className="text-2xl font-bold mb-2">Business Websites</h3>
             <p className="text-base mb-4">
-              We build responsive, custom websites that reflect your brand and
-              scale with your business.
+              Responsive, scalable websites built for growth — free maintenance
+              and full control.
             </p>
-            <FeatureList color="text-purple-600" features={features} />
+            <FeatureList
+              color="text-purple-600"
+              features={businessWebsiteFeatures}
+            />
           </div>
         </div>
       </div>

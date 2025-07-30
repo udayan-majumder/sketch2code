@@ -49,31 +49,44 @@ export default function Hero() {
             className="flex items-center gap-2 px-5 py-2 rounded-lg bg-white text-black font-semibold shadow hover:bg-purple-100 transition text-base border border-neutral-200"
             href="https://www.instagram.com/_sketch2code_/"
           >
-            <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
-              <path
-                d="M7.75 2.75h8.5a5 5 0 0 1 5 5v8.5a5 5 0 0 1-5 5h-8.5a5 5 0 0 1-5-5v-8.5a5 5 0 0 1 5-5Z"
-                stroke="#000"
-                strokeWidth="1.5"
-              />
-              <path
-                d="M16 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM12 8.75a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5Z"
-                stroke="#000"
-                strokeWidth="1.5"
-              />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
             </svg>
-            Contact Us
+            Instagram
           </a>
-          <button className="flex items-center gap-2 px-5 py-2 rounded-lg bg-white text-black font-semibold shadow hover:bg-purple-100 transition text-base border border-neutral-200">
-            <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
-              <path
-                d="M2 12l10 7 10-7-10-7-10 7Z"
-                stroke="#000"
-                strokeWidth="1.5"
-              />
-              <path d="M2 12l10 7 10-7" stroke="#000" strokeWidth="1.5" />
+          <a
+            className="flex items-center gap-2 px-5 py-2 rounded-lg bg-white text-black font-semibold shadow hover:bg-purple-100 transition text-base border border-neutral-200"
+            href="https://www.linkedin.com/in/udayan-majumder-73184a245/"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
             </svg>
-            Contact Us
-          </button>
+            LinkedIn
+          </a>
         </div>
       </div>
 
